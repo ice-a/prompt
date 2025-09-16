@@ -1,0 +1,37 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#42a5f5;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1e88e5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1565c0;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="#1565c0" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- 主背景 -->
+  <circle cx="32" cy="32" r="30" fill="url(#logoGradient)" filter="url(#shadow)"/>
+  
+  <!-- 内容区域 -->
+  <g transform="translate(12, 12)">
+    <!-- 主聊天气泡 -->
+    <path d="M4 8C4 5.79086 5.79086 4 8 4H32C34.2091 4 36 5.79086 36 8V24C36 26.2091 34.2091 28 32 28H12L4 36V8Z" 
+          fill="#ffffff" opacity="0.95"/>
+    
+    <!-- AI闪电符号 -->
+    <path d="M22 12L16 20H20L18 28L24 20H20L22 12Z" 
+          fill="url(#logoGradient)" stroke="#1565c0" stroke-width="1"/>
+    
+    <!-- 装饰元素 -->
+    <circle cx="12" cy="16" r="2" fill="#90caf9" opacity="0.8"/>
+    <circle cx="28" cy="16" r="2" fill="#90caf9" opacity="0.8"/>
+    
+    <!-- 文字提示线条 -->
+    <rect x="10" y="22" width="8" height="1.5" rx="0.75" fill="#bbdefb"/>
+    <rect x="22" y="22" width="6" height="1.5" rx="0.75" fill="#bbdefb"/>
+  </g>
+  
+  <!-- 外圈装饰 -->
+  <circle cx="32" cy="32" r="30" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.3"/>
+</svg>
